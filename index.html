@@ -20,7 +20,7 @@ FORM: Download-first field guide. Static information; installer access remains r
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="preview-notice">Public app information. Beta downloads require access to the private app repository.</div>
+  <div class="preview-notice">Public app information. Installer downloads require an invitation to the private distribution repository.</div>
   <header class="site-header">
     <a class="brand" href="#main" aria-label="caipIQ app home">
       <span>caip<span class="brand-iq">IQ</span></span>
@@ -30,7 +30,7 @@ FORM: Download-first field guide. Static information; installer access remains r
       <a href="#downloads">Downloads</a>
       <a href="#start">Get started</a>
       <a href="#help">Help</a>
-      <a href="https://github.com/naren-msft/caipiq-app">GitHub <span aria-hidden="true">↗</span></a>
+      <a href="https://github.com/namirineni_microsoft/Caip-IQ#private-beta-downloads">Installation guide <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
   <main id="main">
@@ -49,24 +49,26 @@ FORM: Download-first field guide. Static information; installer access remains r
           <h2 id="download-title">Get the beta</h2>
           <span class="version">0.1.23-beta.1</span>
         </div>
-        <p>Choose your computer. GitHub repository access is required.</p>
+        <p>Choose your computer. <a href="https://github.com/enterprises/microsoft/sso">Sign in with Microsoft</a>
+          using your invited EMU GitHub account, then select Download.</p>
         <ul class="download-list">
           <li>
             <div><h3>Windows x64</h3><p>Intel or AMD processor · .exe installer</p></div>
-            <a href="https://github.com/naren-msft/caip-iq-teams/actions/runs/40877460374" aria-label="Open Windows x64 beta download">Download <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/namirineni_microsoft/Caip-IQ/releases/download/v0.1.23-beta.1/caipIQ-0.1.23-windows-x64-beta.1.exe" aria-label="Download Windows x64 beta installer">Download <span aria-hidden="true">↗</span></a>
           </li>
           <li>
             <div><h3>Windows ARM64</h3><p>Windows on ARM · .exe installer</p></div>
-            <a href="https://github.com/naren-msft/caip-iq-teams/actions/runs/40877460374" aria-label="Open Windows ARM64 beta download">Download <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/namirineni_microsoft/Caip-IQ/releases/download/v0.1.23-beta.1/caipIQ-0.1.23-windows-arm64-beta.1.exe" aria-label="Download Windows ARM64 beta installer">Download <span aria-hidden="true">↗</span></a>
           </li>
           <li>
             <div><h3>Mac</h3><p>Apple Silicon, M-series · .dmg installer</p></div>
-            <a href="https://github.com/naren-msft/caip-iq-teams/actions/runs/40877460374" aria-label="Open macOS Apple Silicon beta download">Download <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/namirineni_microsoft/Caip-IQ/releases/download/v0.1.23-beta.1/caipIQ-0.1.23-macos-arm64-beta.1.dmg" aria-label="Download macOS Apple Silicon beta installer">Download <span aria-hidden="true">↗</span></a>
           </li>
         </ul>
-        <p class="download-hint">Open the build's <strong>Artifacts</strong> section, choose the
-          archive matching your computer and unzip it. Archives expire after 30 days; ask the maintainer for a new build
-          if unavailable. An Intel Mac installer is not provided.</p>
+        <p class="download-hint">Once authorized, the button downloads the installer directly.
+          No Actions archive or application-source access is needed. A 404 may mean you need to
+          accept your repository invitation or contact the maintainer for access.
+          An Intel Mac installer is not provided.</p>
         <p class="beta-warning"><strong>Beta, not a production-approved release.</strong>
           These installers are unsigned; macOS is not notarized. Follow your IT policy.
           Do not bypass operating-system or organization restrictions.</p>
@@ -122,13 +124,14 @@ FORM: Download-first field guide. Static information; installer access remains r
         <h2 id="help-title">A few things to know.</h2>
         <p>Installing the app grants neither Microsoft data permissions nor an AI license.
           Your selected provider never switches automatically.</p>
-        <a class="text-link" href="https://github.com/naren-msft/caip-iq-teams/issues">Report an issue (repository access required) <span aria-hidden="true">↗</span></a>
+        <p>For access or beta feedback, contact the maintainer who invited you.
+          Do not send customer data, credentials or sensitive screenshots.</p>
       </div>
       <div class="questions">
         <details>
           <summary>Who can see my account data?</summary>
           <p>Source access is bounded by your Microsoft identity and source permissions.
-            GitHub repository access only permits the downloads; it does not grant account-data access.</p>
+            Distribution-repository access permits downloads, not application-source or account-data access.</p>
         </details>
         <details>
           <summary>Does account evidence go to my AI provider?</summary>
@@ -156,7 +159,7 @@ FORM: Download-first field guide. Static information; installer access remains r
   <footer>
     <div><span class="footer-brand">caipIQ</span><p>Account intelligence. Grounded in evidence.</p></div>
     <p>App: Microsoft internal and confidential<br>Public website · Restricted downloads</p>
-    <a href="https://github.com/naren-msft/caip-iq-teams/blob/main/desktop/README.md">Developer guide (restricted) <span aria-hidden="true">↗</span></a>
+    <a href="https://github.com/namirineni_microsoft/Caip-IQ#private-beta-downloads">Installation guide (invited users) <span aria-hidden="true">↗</span></a>
   </footer>
 </body>
 </html>
