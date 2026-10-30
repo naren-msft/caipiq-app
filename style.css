@@ -13,7 +13,7 @@ html { scroll-padding-top: 24px; }
 body { margin: 0; background: white; color: var(--ink); font: 16px/1.65 "Segoe UI", system-ui, sans-serif; }
 a { color: inherit; text-underline-offset: .2em; }
 a:hover { color: var(--green); }
-a:focus-visible, summary:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }
+a:focus-visible, summary:focus-visible, video:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }
 p { margin: 0 0 1em; max-width: 70ch; }
 h1, h2, h3 { margin: 0; text-wrap: balance; }
 h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
@@ -52,7 +52,14 @@ nav a:hover { text-decoration: underline; }
 .beta-warning strong { display: block; margin-bottom: 3px; }
 .section-heading { display: flex; gap: 48px; align-items: end; justify-content: space-between; margin-bottom: 32px; }
 .section-heading>p { max-width: 33ch; color: var(--muted); margin: 0; font-size: .9rem; }
-.app-preview { padding-block: 26px 72px; }
+.film-preview { padding-block: 26px 72px; scroll-margin-top: 24px; }
+.film-preview video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--navy); border: 1px solid var(--line); }
+.film-status, .film-hint { color: var(--muted); font-size: .82rem; margin-top: 16px; }
+.film-downloads { display: flex; flex-wrap: wrap; gap: 12px 32px; font-size: .94rem; font-weight: 650; }
+.film-downloads span { font-size: .82rem; font-weight: 400; }
+.film-hint { margin-top: 8px; }
+.film-transcript { margin-top: 24px; }
+.film-transcript>div { padding-bottom: 12px; }
 figure { margin: 0; }
 figure a { display: block; }
 figure img { width: 100%; height: auto; display: block; border: 1px solid var(--line); box-shadow: 0 18px 38px #0b153315; }
@@ -89,7 +96,7 @@ footer p { margin: 5px 0 0; }
   .downloads { padding: 24px; }
   .section-heading { display: block; }
   .section-heading>p { margin-top: 20px; max-width: 60ch; }
-  .app-preview { padding-bottom: 40px; }
+  .film-preview { padding-bottom: 40px; }
   .getting-started { padding-block: 40px; }
   .steps li { grid-template-columns: 32px 1fr; }
   .steps p, blockquote { grid-column: 2; }
@@ -102,7 +109,7 @@ footer p { margin: 5px 0 0; }
   .download-list a { padding-block: 4px; }
 }
 @media print {
-  .preview-notice, nav, .button, .skip-link { display: none; }
+  .preview-notice, nav, .button, .skip-link, .film-preview video, .film-status { display: none; }
   .introduction, .help { display: block; }
   .downloads { margin-top: 24px; }
   details>p { display: block !important; }

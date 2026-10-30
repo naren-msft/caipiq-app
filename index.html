@@ -12,11 +12,12 @@ FORM: Download-first field guide. Static information; installer access remains r
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; frame-src 'none'; object-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; media-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'; frame-src 'none'; object-src 'none'">
   <meta name="description" content="The caipIQ desktop app: beta downloads and a short getting-started guide for authorized Microsoft account teams.">
   <title>caipIQ app | Internal beta</title>
   <link rel="icon" href="assets/microsoft-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <script src="preview.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -27,6 +28,7 @@ FORM: Download-first field guide. Static information; installer access remains r
       <img src="assets/microsoft-mark.svg" width="24" height="24" alt="Microsoft">
     </a>
     <nav aria-label="Page navigation">
+      <a href="#film">Watch the film</a>
       <a href="#downloads">Downloads</a>
       <a href="#start">Get started</a>
       <a href="#help">Help</a>
@@ -76,21 +78,67 @@ FORM: Download-first field guide. Static information; installer access remains r
       </aside>
     </section>
 
-    <section class="app-preview" aria-labelledby="preview-title">
-      <div class="section-heading">
-        <h2 id="preview-title">The conversation and the evidence,<br>in the same workspace.</h2>
-        <p>Read the answer, explore available charts and keep the source details close.</p>
-      </div>
+    <section class="film-preview" id="film" aria-label="caipIQ product film">
       <figure>
-        <a href="assets/app-preview.png" aria-label="Open full-size synthetic development preview">
-          <img src="assets/app-preview.png" width="1440" height="900" loading="lazy"
-            alt="Synthetic caipIQ development preview showing a customer conversation next to source tables and an Azure consumption chart.">
-        </a>
-        <figcaption><strong>Synthetic app preview, not customer data.</strong>
-          Interface shown in 0.1.21-beta.1. The account, conversation and chart are synthetic;
-          available data depends on your source access.
-          Updating repository source does not update installed apps.</figcaption>
+        <video id="sizzle-video" controls muted loop playsinline preload="none"
+          width="1440" height="810" poster="assets/caipiq-your-account-your-edge-v4.png"
+          aria-label="caipIQ: Your account. Your edge. Silent one-minute product film."
+          aria-describedby="film-description video-status">
+          <source src="assets/caipiq-your-account-your-edge-v4.mp4" type="video/mp4">
+          Your browser cannot play this film. Download the MP4 or GIF below.
+        </video>
+        <figcaption id="film-description"><strong>Illustrative film with synthetic demonstration data.</strong>
+          Not real-time customer activity. Source permissions still apply.</figcaption>
       </figure>
+      <p class="film-status" id="video-status" role="status">Silent, 60-second film. Use the player controls to play or pause.</p>
+      <div class="film-downloads" aria-label="Presentation downloads">
+        <a href="assets/caipiq-your-account-your-edge-v4.mp4"
+          download="caipIQ-Your-account-your-edge.mp4">Download MP4 <span>(1.7 MB)</span></a>
+        <a href="assets/caipiq-your-account-your-edge-v4.gif"
+          download="caipIQ-Your-account-your-edge.gif">Download GIF <span>(2.1 MB)</span></a>
+      </div>
+      <p class="film-hint">MP4 is recommended for PowerPoint. Both versions are silent; the GIF loops continuously.</p>
+      <details class="film-transcript">
+        <summary>Read the video text</summary>
+        <div>
+          <p>Your account. Your edge. Your personal AI assistant. For account intelligence.
+            ACR. MACC. Pipeline. Milestones.</p>
+          <p>One question. Where should we focus next? Ask caipIQ.</p>
+          <p>Understand consumption. Read the trend. Explore the service mix.
+            Keep the reporting period visible. Synthetic source capture. Original periods retained.</p>
+          <p>Know the commitment. Progress. Remaining balance. Deadline.
+            Agreement start, review point, deadline. What pace is needed?
+            Illustrative framework, not an account forecast.</p>
+          <p>Put pipeline in context. See what is qualified. Know what is committed.
+            Qualified pipeline includes committed and uncommitted pipeline.
+            Committed is a qualified subset. Compare like periods.</p>
+          <p>Look beyond the plan. Explore whitespace. Shape the next discovery conversation.
+            Current plan. What else? New possibilities. Data, AI, Applications, Infrastructure,
+            Security. Opportunity hypotheses, not verified customer demand.</p>
+          <p>Human IQ. Customer priorities. Human judgment. Business-value conversations.
+            Mission, capability gaps, technology choices.
+            caipIQ surfaces the signals. You author the “so what.”</p>
+          <p>Built for the account team. Different roles. Clearer next moves.
+            CSA: Connect architecture to growth opportunities.
+            CSAM: Track milestones, risks and consumption.
+            Specialist: Shape workload discovery conversations.
+            Account Executive: Build account strategy and leadership asks.
+            Partners and leaders: evidence-backed discussions.</p>
+          <p>Frontier assessments. Explore AI readiness. Keep evidence gaps visible.
+            Copilot &amp; Agents, AI Ready, GitHub Copilot, Security &amp; Governance,
+            Resilience &amp; Redundancy.
+            Evidence-led assessments, not proof of deployed AI or business outcomes.</p>
+          <p>Choice. Control. GitHub Copilot or Local AI. Evidence-sharing controls.
+            Source permissions still apply. Local AI runtime and model downloads require approval.</p>
+          <p>Build the leadership story. Actuals. Risks. Recommended moves.
+            Explicit leadership asks. Editable PowerPoint. PDF with LibreOffice.</p>
+          <p>See. Think. Act. Information IQ. Human IQ. Next steps.
+            Evidence informs. Human judgment decides.</p>
+          <p>caipIQ. Your personal AI assistant. Grounded in evidence.
+            Explore the private beta. Mac and Windows. Microsoft account teams.
+            Illustrative motion. Synthetic demo. Not real-time.</p>
+        </div>
+      </details>
     </section>
 
     <section class="getting-started" id="start" aria-labelledby="start-title">
