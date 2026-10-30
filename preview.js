@@ -26,7 +26,7 @@
     if (eligible() && !video.error) {
       video.play().catch((error) => {
         if (error.name === "AbortError" && !eligible()) return;
-        status.textContent = "Automatic playback is unavailable. Press Play, or download the film below.";
+        status.textContent = "Automatic playback is unavailable. Press Play to watch the film.";
       });
     }
   };
@@ -40,7 +40,7 @@
     status.textContent = "Silent, 60-second film. Use the player controls to play or pause.";
   });
   video.addEventListener("error", () => {
-    status.textContent = "The film could not load. Download the MP4 or GIF below.";
+    status.textContent = "The film could not load. Please reload the page, or try a current browser.";
   });
   document.addEventListener("visibilitychange", synchronize);
   reducedMotion.addEventListener("change", synchronize);

@@ -54,10 +54,7 @@ nav a:hover { text-decoration: underline; }
 .section-heading>p { max-width: 33ch; color: var(--muted); margin: 0; font-size: .9rem; }
 .film-preview { padding-block: 26px 72px; scroll-margin-top: 24px; }
 .film-preview video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--navy); border: 1px solid var(--line); }
-.film-status, .film-hint { color: var(--muted); font-size: .82rem; margin-top: 16px; }
-.film-downloads { display: flex; flex-wrap: wrap; gap: 12px 32px; font-size: .94rem; font-weight: 650; }
-.film-downloads span { font-size: .82rem; font-weight: 400; }
-.film-hint { margin-top: 8px; }
+.film-status { color: var(--muted); font-size: .82rem; margin-top: 16px; }
 .film-transcript { margin-top: 24px; }
 .film-transcript>div { padding-bottom: 12px; }
 figure { margin: 0; }
