@@ -1,8 +1,8 @@
 "use strict";
 
-(() => {
-  const video = document.getElementById("sizzle-video");
-  const status = document.getElementById("video-status");
+document.querySelectorAll("video[data-status]").forEach((video) => {
+  const status = document.getElementById(video.dataset.status);
+  const duration = video.dataset.duration;
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   let visible = false;
   let manuallyPaused = false;
@@ -19,7 +19,7 @@
     if (!visible || document.hidden || reducedMotion.matches) {
       pauseAutomatically();
       if (reducedMotion.matches) {
-        status.textContent = "Reduced motion is enabled. Press Play to watch the silent, 60-second film.";
+        status.textContent = `Reduced motion is enabled. Press Play to watch the silent, ${duration}-second film.`;
       }
       return;
     }
@@ -37,7 +37,7 @@
   });
   video.addEventListener("play", () => {
     manuallyPaused = false;
-    status.textContent = "Silent, 60-second film. Use the player controls to play or pause.";
+    status.textContent = `Silent, ${duration}-second film. Use the player controls to play or pause.`;
   });
   video.addEventListener("error", () => {
     status.textContent = "The film could not load. Please reload the page, or try a current browser.";
@@ -50,6 +50,6 @@
       synchronize();
     }, { threshold: [0, 0.25] }).observe(video);
   } else {
-    status.textContent = "Press Play to watch the silent, 60-second film.";
+    status.textContent = `Press Play to watch the silent, ${duration}-second film.`;
   }
-})();
+});

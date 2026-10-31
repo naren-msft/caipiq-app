@@ -17,7 +17,7 @@ FORM: Download-first field guide. Static information; installer access remains r
   <title>caipIQ app | Internal beta</title>
   <link rel="icon" href="assets/microsoft-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css?v=20261030-large-text">
-  <script src="preview.js" defer></script>
+  <script src="preview.js?v=20261030-two-films" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -29,6 +29,7 @@ FORM: Download-first field guide. Static information; installer access remains r
     </a>
     <nav aria-label="Page navigation">
       <a href="#film">Watch the film</a>
+      <a href="#desktop-tour">Desktop tour</a>
       <a href="#downloads">Downloads</a>
       <a href="#start">Get started</a>
       <a href="#help">Help</a>
@@ -80,7 +81,7 @@ FORM: Download-first field guide. Static information; installer access remains r
 
     <section class="film-preview" id="film" aria-label="caipIQ product film">
       <figure>
-        <video id="sizzle-video" controls controlslist="nodownload" muted loop playsinline preload="none"
+        <video id="sizzle-video" data-status="video-status" data-duration="60" controls controlslist="nodownload" muted loop playsinline preload="none"
           width="1440" height="810" poster="assets/caipiq-your-account-your-edge-v4.png"
           aria-label="caipIQ: Your account. Your edge. Silent one-minute product film."
           aria-describedby="film-description video-status">
@@ -130,6 +131,57 @@ FORM: Download-first field guide. Static information; installer access remains r
           <p>caipIQ. Your personal AI assistant. Grounded in evidence.
             Explore the private beta. Mac and Windows. Microsoft account teams.
             Illustrative motion. Synthetic demo. Not real-time.</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="film-preview" id="desktop-tour" aria-label="Inside the caipIQ desktop app">
+      <figure>
+        <video id="desktop-video" data-status="desktop-video-status" data-duration="75"
+          controls controlslist="nodownload" muted loop playsinline preload="none"
+          width="1440" height="810" poster="assets/caipiq-desktop-walkthrough-75s-v2.png"
+          aria-label="Inside caipIQ: a silent 75-second desktop feature walkthrough."
+          aria-describedby="desktop-description desktop-video-status">
+          <source src="assets/caipiq-desktop-walkthrough-75s-v2.mp4" type="video/mp4">
+          Your browser cannot play this film. Try a current browser to watch it.
+        </video>
+        <figcaption id="desktop-description"><strong>Inside the desktop app.</strong>
+          Actual interface captures with synthetic demonstration data and edited camera moves,
+          not a live screen recording. Chat, account evidence, reports, background work,
+          Frontier authoring and Connections.</figcaption>
+      </figure>
+      <p class="film-status" id="desktop-video-status" role="status">Silent, 75-second film. Use the player controls to play or pause.</p>
+      <details class="film-transcript">
+        <summary>Read the desktop walkthrough text</summary>
+        <div>
+          <p>Meet your desktop assistant. A real workspace for Microsoft account teams.
+            Mac and Windows. Silent product tour.</p>
+          <p>Start with a customer question. Ask by customer name or TPID.
+            Pin an account to stay focused. Account workspace, chat and account view.</p>
+          <p>Chat view. Ask and follow up. Read the response and ask your next customer
+            question. Illustrative response, not a live model run.</p>
+          <p>Chat and account view. Side by side. Chat on the right. Saved analysis and
+            source charts on the left. Original periods stay intact.
+            Live refresh does not rewrite them.</p>
+          <p>Explore consumption and source values. Charts and tables keep the reporting
+            period visible. Synthetic ACR example. Partial months remain labelled.</p>
+          <p>See how targets are phased. Review quarter-by-quarter targets alongside the
+            underlying rows. Missing values are not zero. Synthetic target example.</p>
+          <p>Build the leadership story. Create an editable PowerPoint.
+            Find saved reports in the library. PDF conversion requires LibreOffice.</p>
+          <p>Review a report inside the app. Keep the report narrative, charts and source
+            context close. Synthetic report preview. Exports follow customer-data policy.</p>
+          <p>Queue work. Keep browsing. Queue a separate question or explicitly schedule it.
+            One workflow at a time. Runs only while caipIQ is open.</p>
+          <p>Evidence first. Human judgment reviewed. Optional healthcare Frontier V1
+            authoring supports human review. Continue a protected case created from chat.
+            Draft export.</p>
+          <p>Connect your sources. Choose your AI. Microsoft source access and AI-provider
+            choice remain separate. GitHub Copilot or Local AI.
+            Your source permissions still apply.</p>
+          <p>Your personal AI assistant. For account intelligence. Grounded in evidence.
+            caipIQ. Explore the private beta. Actual UI captures, synthetic demo data,
+            edited, not real-time.</p>
         </div>
       </details>
     </section>
